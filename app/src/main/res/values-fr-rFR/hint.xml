@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_nome">Entrez votre nom:</string>
+    <string name="hint_sobrenome">Informe seu Sobrenome:</string>
+    <string name="hint_email">Informe seu email:</string>
+    <string name="hint_telefone">Informe seu Telefone:</string>
+    <string name="hint_btn_exibir">Exibir</string>
+    <string name="hint_btn_pessoa">Pessoa</string>
+    <string name="hint_btn_endereco">Endereço</string>
+    <string name="hint_btn_usuario">Usuário</string>
+    <string name="hint_tela_endereco">Tela de Endereço</string>
+    <string name="hint_tela_usuario">Tela de Usuário</string>
+    <string name="hint_user_id">Informe seu UserId:</string>
+    <string name="hint_titulo">Informe o Título:</string>
+    <string name="hint_descricao">Informa a Descrição:</string>
+    <string name="btn_postar">Postar</string>
+    <string name="btn_post">Post</string>
+</resources>
