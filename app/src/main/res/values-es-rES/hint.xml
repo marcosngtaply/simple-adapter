@@ -13,6 +13,8 @@
     <string name="hint_user_id">Informe seu UserId:</string>
     <string name="hint_titulo">Informe o Título:</string>
     <string name="hint_descricao">Informa a Descrição:</string>
-    <string name="btn_postar">Postar</string>
-    <string name="btn_post">Post</string>
+    <string name="hint_btn_postar">Postar</string>
+    <string name="hint_btn_post">Post</string>
+    <string name="hint_id_post">Informe o ID do Post:</string>
+    <string name="hint_btn_comentar">Comentar</string>
 </resources>

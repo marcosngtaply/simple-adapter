@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:onClick="adicionarPost"
-            android:text="@string/btn_postar" />
+            android:text="@string/hint_btn_postar" />
 
         <ListView
             android:id="@+id/listViewPost"

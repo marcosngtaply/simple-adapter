@@ -43,6 +43,11 @@ import com.example.projetoandroidfaculdade.debug.DebugActivity;
                 startActivity(intent);
                 break;
 
+            case R.id.btnComment:
+                intent = new Intent(this, CommentsActivity.class);
+                startActivity(intent);
+                break;
+
             default:
                 Toast.makeText(this,"Opção Inválida.",Toast.LENGTH_LONG).show();
                 break;

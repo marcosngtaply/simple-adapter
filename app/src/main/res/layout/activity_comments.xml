@@ -4,46 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.HomeActivity">
+    tools:context=".activity.CommentsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnAddress"
+        <EditText
+            android:id="@+id/txtPostId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="exibir"
-            android:hint="@string/hint_btn_endereco" />
+            android:ems="10"
+            android:hint="@string/hint_id_post" />
+
+        <EditText
+            android:id="@+id/txtCommentNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_nome" />
+
+        <EditText
+            android:id="@+id/txtCommentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_email" />
+
+        <EditText
+            android:id="@+id/txtCommentBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_descricao" />
 
         <Button
-            android:id="@+id/btnPessoa"
+            android:id="@+id/btnComentar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="exibir"
-            android:hint="@string/hint_btn_pessoa" />
+            android:ems="10"
+            android:onClick="adicionarComment"
+            android:hint="@string/hint_btn_comentar" />
 
-        <Button
-            android:id="@+id/btnUser"
+        <ListView
+            android:id="@+id/listViewComment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="exibir"
-            android:hint="@string/hint_btn_usuario" />
-
-        <Button
-            android:id="@+id/btnPost"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="exibir"
-            android:hint="@string/hint_btn_post" />
-
-        <Button
-            android:id="@+id/btnComment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="exibir"
-            android:hint="Comentários" />
+            android:layout_height="match_parent" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
