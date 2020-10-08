@@ -19,7 +19,7 @@
         <activity android:name=".activity.PessoaActivity" />
         <activity android:name=".activity.AddressActivity" />
         <activity android:name=".activity.UserActivity" />
-        <activity android:name=".activity.CommentsActivity"/>
+        <activity android:name=".activity.CommentActivity"/>
         <activity android:name=".activity.PostActivity" />
     </application>
 

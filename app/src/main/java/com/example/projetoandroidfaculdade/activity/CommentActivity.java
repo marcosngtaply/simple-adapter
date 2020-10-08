@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class CommentsActivity extends AppCompatActivity {
+public class CommentActivity extends AppCompatActivity {
 
     EditText txtPostId;
     EditText txtNome;

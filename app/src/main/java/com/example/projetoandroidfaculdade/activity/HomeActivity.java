@@ -44,7 +44,7 @@ import com.example.projetoandroidfaculdade.debug.DebugActivity;
                 break;
 
             case R.id.btnComment:
-                intent = new Intent(this, CommentsActivity.class);
+                intent = new Intent(this, CommentActivity.class);
                 startActivity(intent);
                 break;
 
