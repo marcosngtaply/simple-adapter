@@ -17,10 +17,7 @@ import java.util.List;
 
 public class CommentActivity extends AppCompatActivity {
 
-    EditText txtPostId;
-    EditText txtNome;
-    EditText txtEmail;
-    EditText txtBody;
+    EditText txtPostId, txtNome, txtEmail, txtBody;
     ListView listViewComment;
 
     List<HashMap<String, String>> lista = new ArrayList<>();
@@ -32,19 +29,15 @@ public class CommentActivity extends AppCompatActivity {
     }
 
     public void adicionarComment(View view) {
-        //------------------- Entrada
         txtPostId = findViewById(R.id.txtPostId);
         txtNome = findViewById(R.id.txtCommentNome);
         txtEmail = findViewById(R.id.txtCommentEmail);
         txtBody = findViewById(R.id.txtCommentBody);
 
-        //------------------ Processamento
-        String postId, name, email, body;
-        postId = txtPostId.getText().toString();
-        name = txtNome.getText().toString();
-        email = txtEmail.getText().toString();
-        body = txtBody.getText().toString();
+        simpleAdapter(txtPostId.getText().toString(), txtNome.getText().toString(), txtEmail.getText().toString(), txtBody.getText().toString());
+    }
 
+    public void simpleAdapter(String postId, String name, String email, String body) {
         HashMap<String, String> map = new HashMap<>();
         map.put("postId", postId);
         map.put("name", name);
@@ -53,14 +46,11 @@ public class CommentActivity extends AppCompatActivity {
 
         lista.add(map);
 
-        //------------------ Saída
         String[] from = {"postId", "nome", "email", "body"};
         int[] to = {R.id.txtItemPostId, R.id.txtItemNome, R.id.txtItemEmail, R.id.txtItemBody};
 
         SimpleAdapter simpleAdapter = new SimpleAdapter(this, lista, R.layout.item_comment, from, to);
 
-
-        //------------------ Exibir Dados
         listViewComment = findViewById(R.id.listViewComment);
         listViewComment.setAdapter(simpleAdapter);
     }

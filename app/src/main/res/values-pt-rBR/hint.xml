@@ -17,4 +17,5 @@
     <string name="hint_btn_post">Post</string>
     <string name="hint_id_post">Informe o ID do Post:</string>
     <string name="hint_btn_comentar">Comentar</string>
+    <string name="hint_btn_comentarios">Comentários</string>
 </resources>

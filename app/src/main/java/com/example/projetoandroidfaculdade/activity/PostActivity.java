@@ -17,9 +17,7 @@ import java.util.List;
 
 public class PostActivity extends DebugActivity {
 
-    EditText txtUserId;
-    EditText txtTitle;
-    EditText txtBody;
+    EditText txtUserId, txtTitle, txtBody;
     ListView listViewPost;
 
     List<HashMap<String, String>> lista = new ArrayList<>(); //pega a lista de dados enviada pelo usuário
